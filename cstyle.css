@@ -1,0 +1,192 @@
+/* Import Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap');
+
+/* Root Variables */
+:root {
+    --primary-bg: #0b132b;
+    --secondary-bg: #1c2541;
+    --card-bg: #3a506b;
+    --text-color: #ffffff;
+    --accent-color: #ff9800;
+    --hover-color: #ff5722;
+    --shadow: rgba(255, 152, 0, 0.3);
+    --font-family: 'Poppins', sans-serif;
+}
+span{
+    color: rgb(215, 25, 32);
+}
+/* General Styles */
+body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color:#1e1e1e; /* Dark background */
+            color: white; /* Light text for contrast */
+            overflow-x: hidden;
+        }
+
+/* Header */
+ header {
+            background-color: rgba(0, 0, 0, 0.3); /* Transparent background */
+            color: white;
+            padding: 40px 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: fixed; /* Fixed position for dynamic movement */
+            width: 100%; /* Full width */
+            z-index: 100;
+            transition: top 0.3s, bottom 0.3s; /* Smooth movement */
+        }
+        
+        .logo {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 2.3rem;
+            padding: 10px;
+            font-weight: bold;
+            margin-left: 20px;
+            color:  rgb(215, 25, 32);
+        }
+        #navbar{
+            position: sticky;
+            top: 0;
+            height:50px;
+        }
+nav{
+    display: flex;
+     justify-content: center; /* Centers horizontally */
+  align-items: center;     /* Aligns vertically */
+  gap: 550px;  
+}
+
+nav h1{
+    font-size: 2.6rem;
+}
+/* Sign Out Button */
+.sign-out-btn {
+    background: transparent;
+    color: var(--accent-color);
+    border: 2px solid var(--accent-color);
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 30px;
+    transition: all 0.3s ease-in-out;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0 4px 10px var(--shadow);
+    margin-right: 20px;
+}
+
+.sign-out-btn:hover {
+    background: var(--accent-color);
+    color: var(--primary-bg);
+    box-shadow: 0 6px 15px var(--shadow);
+    transform: scale(1.05);
+}
+
+/* Button Container */
+.btn-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+    gap: 20px;
+    min-width: fit-content;
+}
+
+/* Buttons */
+.btn {
+    background: linear-gradient(135deg, var(--accent-color), var(--hover-color));
+    color: var(--text-color);
+    border: none;
+    padding: 18px 40px;
+    font-size: 1.6rem;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: all 0.3s ease-in-out;
+    width: 250px;
+    font-weight: 700;
+    box-shadow: 0 6px 15px var(--shadow);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease-in-out;
+}
+
+.btn:hover::before {
+    left: 100%;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 25px var(--shadow);
+}
+
+/* Add subtle animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+header, .btn-container {
+    animation: fadeIn 1s ease-in-out;
+}
+  footer   {
+            background-color: #121212;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        
+            
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        footer h2{
+            text-align: center;
+          font-size: 1rem;
+        }
+     
+/* Responsive Design */
+@media (max-width: 800px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .sign-out-btn {
+        margin-top: 10px;
+        margin-right: 0;
+    }
+
+    .btn-container {
+        flex-direction: column;
+    }
+
+    .btn {
+        width: 90%;
+    }
+}

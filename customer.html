@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Portal</title>
+    <link rel="stylesheet" href="cstyle.css"> <!-- Linking external CSS -->
+</head>
+<body>
+
+    <header id="navbar">
+        <div class="logo">BookMyMeal </div>
+        <nav>
+        <h1>Customer Portal</h1>
+        <form action="logout.php" method="POST">
+            <button type="submit" class="sign-out-btn">Sign Out</button>
+        </form>
+        </nav>
+    </header>
+    
+    <section id="choices">
+        <form action="redirect.php" method="POST" class="btn-container">
+            <a href="menu.html"><button type="submit" name="page" value="menu" class="btn">Menu</button></a>
+            <button type="submit" name="page" value="reservations" class="btn">Reservations</button>
+            <button type="submit" name="page" value="cancel-order" class="btn">Cancel Order</button>
+            <button type="submit" name="page" value="feedback" class="btn">Cancel Reservations</button>
+        </form>
+    </section>
+     <footer>
+       <h2> <p>&copy; 2025 <span>BookMyMeal.</span>| All Rights Reserved.</p></h2>
+        
+        
+    </footer>
+
+    <script src="script.js"></script> 
+</body>
+</html>

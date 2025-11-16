@@ -1,0 +1,215 @@
+body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color:#1e1e1e; /* Dark background */
+            color: white; /* Light text for contrast */
+            overflow-x: hidden;
+        }
+        header {
+            background-color: rgba(0, 0, 0, 0.3); /* Transparent background */
+            color: white;
+            padding: 40px 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: fixed; /* Fixed position for dynamic movement */
+            width: 100%; /* Full width */
+            z-index: 100;
+            transition: top 0.3s, bottom 0.3s; /* Smooth movement */
+        }
+        span{
+            color: rgb(215, 25, 32);
+        }
+        
+        .logo {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 2.3rem;
+            padding: 10px;
+            font-weight: bold;
+            margin-left: 20px;
+            color:  rgb(215, 25, 32);
+        }
+        #navbar{
+            height:2px;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 5px 5px;
+            padding: 10px;
+            display: flex;
+            gap: 30px;
+            font-size: 1rem;
+        }
+       
+        nav ul li a {
+            text-decoration: none;
+            color:whitesmoke;
+            padding: 10px;
+
+        }
+        nav ul li a:hover {
+            background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent hover effect */
+            border-radius: 5px;
+        }
+        .container {
+            max-width: 100%; /* Full width container */
+            margin: 0 auto; /* Center align content */
+        }
+        .home-container{
+            min-width: fit-content;
+            min-height: fit-content;
+        }
+       
+        .home-container-img img {
+            width: 100%;
+            height: 100vh;
+            object-fit: cover;
+            display: block;
+            opacity: 0.8; /* Makes the first image slightly opaque */
+        }
+        .home-container .home-container-descrip {
+            margin: 100px;
+            position: absolute;
+           top: 8px;
+            z-index: 2;
+            width: 450px;
+
+        }
+         .home-container .home-container-descrip h2{
+            
+             font-size: 3.6rem;
+
+         }
+         .home-container .home-container-descrip p{
+            text-align: justify;
+            position: relative;
+        bottom: 30px;
+        font-weight: 200;
+
+         }
+.home-container .home-container-descrip .menu-btn{
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: 600;
+    color:whitesmoke; /* Button text contrast */
+    background-color:  #c0392b; /* Dark red for the button */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease ; 
+    transform: 0.2s ease;
+}
+.home-container .home-container-descrip .menu-btn:hover{
+    background-color: #a93226;   /* Darker on hover */
+}
+
+
+
+        .cousine-container {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            width: 100%;
+        }
+        .cousine-container SPAN{
+            color: rgb(215, 25, 32);
+        }
+         .cousine-container h2{
+            font-size: 3.3rem;
+
+         }
+
+        .cousine-container .cousine-wrapper{
+            position: relative;
+            width:50%;
+            padding: 2rem;
+            
+         
+           
+        }
+
+        .cousine-container .cousine-slide{
+            display: flex;
+             flex-direction: column;
+               align-items: center;
+             background-color:rgba(255, 255, 255, 0.2);
+            border-radius: 2rem;
+            padding: 2rem 5rem;
+            border-top: 0.3rem solid whitesmoke;
+            border-bottom: 0.3rem solid whitesmoke;
+            }
+       
+
+            .cousine-slide img{
+                width: 10rem;
+                height: 10rem;
+                object-fit: cover;
+                border-radius: 50%;
+                outline: 0.2rem solid  whitesmoke;
+            }
+
+            .cousine-slide h3{
+                font-size: 2.5rem;
+             margin: 2rem 0;
+            }
+
+            .cousine-slide p{
+                font-size: 1rem;
+                text-align: left;
+            }
+            .swiper-slide {
+              display: flex;
+              justify-content: center;
+               align-items: center;
+              width: 100%; /* Allow one slide per view */
+             box-sizing: border-box;
+             }
+
+
+            .cousine-wrapper .cousine-box{
+               overflow: hidden;
+    
+            }
+            .cousine-container{
+                min-height: fit-content;
+            }
+
+            .home-container-2 {
+                display: grid;
+                grid-template-columns: 1fr 1fr ;
+                gap: 20px;
+                cursor: pointer;
+            }
+           .home-container-2 .img-1 img,
+           .home-container-2 .img-2 img,
+           .home-container-2 .img-3 img,
+           .home-container-2 .img-4 img{
+            width: 800px;
+            height: 500px;
+            border-radius: 25px;
+            object-fit: cover;
+            padding-left: 20px;
+           }
+
+
+            footer   {
+            background-color: #121212;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+            font-size: 14px;
+        }
+        footer h2{
+            text-align: center;
+            font-size: small;
+        }
+        footer a {
+            color: #4caf50;
+            text-decoration: none;
+            margin: 0 5px;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
